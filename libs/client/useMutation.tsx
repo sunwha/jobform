@@ -2,8 +2,8 @@ import { useState } from "react";
 
 interface UseMutationState {
   loading: boolean;
-  data?: object;
-  error?: object;
+  data?: { [key: string]: any };
+  error?: any;
 }
 type UseMutationResult = [(data: any) => void, UseMutationState];
 
